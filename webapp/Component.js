@@ -43,7 +43,7 @@ sap.ui.define([
 
             },
             aoNavegar: function(oEvent){
-                debugger;
+                //debugger;
                 //guarda o nome da rota
                 let sNomeDaRota = oEvent.getParameters().name;
                 let sLayout;
