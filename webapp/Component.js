@@ -52,6 +52,9 @@ sap.ui.define([
                     case "RouteParceiros":
                         sLayout = "OneColumn";
                         break;
+                    case "RouteDetalheParceiro":
+                        sLayout = "TwoColumnLayout";
+                        break;
                 }
 
                 //Resgata o modelo e altera a propriedade modo que está associada no flexibleColumnLayout

@@ -5,7 +5,9 @@
         <content>
 
             <List id="listaParceiros"
-                  items="{/I_BusinessPartner}">
+                  items="{/I_BusinessPartner}"
+                  mode="SingleSelectMaster"
+                  itemPress="aoSelecionarParceiro">
 
                 <headerToolbar>
                     <OverflowToolbar >
@@ -18,7 +20,8 @@
                 </headerToolbar>
 
                 <items>
-                    <StandardListItem title="{BusinessPartnerName}" description="{BusinessPartner}"></StandardListItem>
+                    <StandardListItem title="{BusinessPartnerName}" description="{BusinessPartner}"
+                                      type="Active"/>
                 </items>
 
             </List>

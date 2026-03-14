@@ -93,8 +93,7 @@
         "viewType": "XML",
         "async": true,
         "viewPath": "fiori.z10bp.view",
-        "controlAggregation": "pages",
-        "controlId": "app",
+        "controlId": "fcl",
         "clearControlAggregation": false
       },
       "routes": [
@@ -104,7 +103,17 @@
           "target": [
             "TargetParceiros"
           ]
+        },
+
+        {
+          "name": "RouteDetalheParceiro",
+          "pattern": "{idParceiro}",
+          "target": [
+            "TargetParceiros",
+            "TargetDetalheParceiro"
+          ]
         }
+
       ],
       "targets": {
         "TargetParceiros": {
@@ -112,7 +121,17 @@
           "transition": "slide",
           "clearControlAggregation": false,
           "viewId": "Parceiros",
-          "viewName": "Parceiros"
+          "viewName": "Parceiros",
+          "controlAggregation": "beginColumnPages"
+        },
+
+        "TargetDetalheParceiro": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "DetalheParceiro",
+          "viewName": "DetalheParceiro",
+          "controlAggregation": "midColumnPages"
         }
       }
     },
